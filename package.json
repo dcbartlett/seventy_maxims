@@ -1,6 +1,6 @@
 {
   "name": "@dcbartlett/seventy_maxims",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The Seventy Maxims of Maximally Effective Mercenaries",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
