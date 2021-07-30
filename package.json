@@ -1,0 +1,15 @@
+{
+  "name": "@dcbartlett/seventy_maxims",
+  "version": "1.0.1",
+  "description": "The Seventy Maxims of Maximally Effective Mercenaries",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --"
+  },
+  "author": "Dennis Bartlett",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  },
+  "dependencies": {}
+}
