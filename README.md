@@ -9,7 +9,7 @@ This module just provides the Seventy Maxims in a consumable format.
 const { getMaxim } = require('@dcbartlett/seventy_maxims')
 const randomMaxim = getMaxim()
 console.log(randomMaxim)
-const randomFullMaxim = getMaxim()
+const randomFullMaxim = getMaxim(true)
 console.log(randomFullMaxim)
 const definedMaxim = getMaxim(10)
 console.log(definedMaxim)
