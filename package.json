@@ -1,12 +1,13 @@
 {
   "name": "@dcbartlett/seventy_maxims",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The Seventy Maxims of Maximally Effective Mercenaries",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prepublish": "npm run test && npm run version patch",
+    "postpublish": "git add package.json && echo 'Please commit the version change.'",
     "version": "node incrementVersion",
     "pretest": "npm run build",
     "test": "jest --"

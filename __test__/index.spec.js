@@ -12,11 +12,16 @@ describe("Seventy Maxim", () => {
     expect(maxim).toEqual('Pillage, then burn.');
   })
   it('should give a Maxim object if asked', () => {
-    const maxim = getMaxim(1, true);
-    expect(maxim).toBeDefined();
-    expect(maxim).toHaveProperty("id");
-    expect(maxim).toHaveProperty("content");
-    expect(maxim.content).toBeDefined();
-    expect(maxim.content).toEqual('Pillage, then burn.');
+    const randomMaxim = getMaxim(true);
+    expect(randomMaxim).toBeDefined();
+    expect(randomMaxim).toHaveProperty("id");
+    expect(randomMaxim).toHaveProperty("content");
+    expect(randomMaxim.content).toBeDefined();
+    const definedMaxim = getMaxim(1, true);
+    expect(definedMaxim).toBeDefined();
+    expect(definedMaxim).toHaveProperty("id");
+    expect(definedMaxim).toHaveProperty("content");
+    expect(definedMaxim.content).toBeDefined();
+    expect(definedMaxim.content).toEqual('Pillage, then burn.');
   })
 })

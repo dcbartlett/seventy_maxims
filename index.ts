@@ -5,8 +5,12 @@ interface Maxim {
   content: string
 }
 
-function getMaxim(id: string | number, fullMaxim?: boolean): string | Maxim {
+function getMaxim(id?: string | number, fullMaxim?: boolean): string | Maxim {
   let parsedID = id;
+  if (typeof parsedID === "boolean") {
+    fullMaxim = parsedID;
+    parsedID = undefined;
+  }
   if (typeof parsedID === "string") {
     parsedID = parseInt(parsedID);
   }
